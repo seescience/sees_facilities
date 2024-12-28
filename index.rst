@@ -44,7 +44,7 @@ There are several types of facilities included here, including
 How to build these documents
 ---------------------------------
 
-This documentation is built with `Sphinx_`, which requires Python
+This documentation is built with `Sphinx`_, which requires Python
 (version 3.9 or higher) to build. We recommend building this on a
 Linux (or macOS) system or a Windows system with the *make*
 development tool installed (many user accounts set up for Epics
@@ -85,6 +85,7 @@ Table of Contents
 
 .. toctree::
    :maxdepth: 2
+   :caption: Facilities:
 
    APS/index.rst
    NSLS-II
