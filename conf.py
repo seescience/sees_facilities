@@ -25,6 +25,7 @@ from datetime import date
 extensions = ['sphinx.ext.mathjax',
               'sphinx_copybutton',
               'sphinx_pdf_generate',
+              'rst2pdf.pdfbuilder'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -95,7 +96,7 @@ pygments_style = 'sphinx'
 # Sphinx are currently 'default' and 'sphinxdoc'.
 html_theme = 'bizstyle'
 
-# html_theme = 'nature'
+# html_theme = 'alabaster'
 # html_theme = 'agogo'
 # html_theme_options = {'pagewidth':'85em', 'documentwidth':'60em', 'sidebarwidth': '25em',
 #                       # 'headercolor1': '#000080',
