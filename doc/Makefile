@@ -9,11 +9,7 @@ SOURCEDIR     = .
 BUILDDIR      = _build
 INSTALLDIR    = .
 
-# Internal variables.
-PAPEROPT_a4     = -D latex_paper_size=a4
-PAPEROPT_letter = -D latex_paper_size=letter
-ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(PAPEROPT_letter) $(SPHINXOPTS) .
-
+ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(SPHINXOPTS) .
 
 .PHONY: help html pdf all help clean dirhtml latex sphinxhelp
 
