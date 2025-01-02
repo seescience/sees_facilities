@@ -1,4 +1,6 @@
-.. aps_13ide_xrm
+.. include:: ../substitutions.txt
+
+.. _aps_13ide_xrm:
 
 APS 13-ID-E X-ray Microprobe
 ===============================================================
@@ -8,7 +10,7 @@ Beamline Overview
 
 The 13-ID-E hard x-ray microprobe provides researchers resources for
 microfocused x-ray fluorescence, absorption spectroscopy, and
-diffraction analysis at spatial resolutions from 500 nm to 50 microns.
+diffraction analysis at spatial resolutions from 0.5 to 200 |micron|.
 
 
 Contacts
@@ -26,32 +28,32 @@ Contacts
 Beamline specifications
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
- +-------------------------+-----------------------------------------------------+
- | Quantity                | Value                                               |
- +=========================+=====================================================+
- | X-ray Source            | undulator, 33 mm period                             |
- +-------------------------+-----------------------------------------------------+
- | Monochromator           | DCM, LN2-cooled, 2 crystal sets                     |
- +----+--------------------+-----------------------------------------------------+
- | Si (111) monochromator crystal set                                            |
- +----+--------------------+-----------------------------------------------------+
- |    | Energy Range (keV) | 2.3 to 28 keV                                       |
- +----+--------------------+-----------------------------------------------------+
- |    | Energy Resolution  | 1.3x10\ :sup:`-4`, typical                          |
- +----+--------------------+-----------------------------------------------------+
- |    | Typical Flux (Hz)  | 5x10\ :sup:`10` (2.5 keV), 5x10\ :sup:`12` (10 keV) |
- +----+--------------------+-----------------------------------------------------+
- | Si (311) monochromator crystal set                                            |
- +----+--------------------+-----------------------------------------------------+
- |    | Energy Range (keV) | 4.8 to 28 keV                                       |
- +----+--------------------+-----------------------------------------------------+
- |    | Energy Resolution  | 4x10\ :sup:`-5`, typical                            |
- +----+--------------------+-----------------------------------------------------+
- |    | Typical Flux (Hz)  | 1x10\ :sup:`11` (7 keV), 2x10\ :sup:`12` (10 keV)   |
- +----+--------------------+-----------------------------------------------------+
 
-Fluxes reported are with beam focused, typically 0.5 x 0.5 micron to 5
-x 5 micron.
+ +---------------------------+-----------------------------------------------------------+
+ | Quantity                  | Value                                                     |
+ +===========================+===========================================================+
+ | X-ray Source              | undulator, 33 mm period                                   |
+ +---------------------------+-----------------------------------------------------------+
+ | Typical Beam Size         | 0.5 x 0.5 |micron| to 200 x 200 |micron|                  |
+ +---------------------------+-----------------------------------------------------------+
+ | Monochromator             | Double-Crystal Mono, LN2-cooled, 2 crystal sets           |
+ +---+-----------------------+-----------------------------------------------------------+
+ | Si (111) monochromator crystal set                                                    |
+ +---+-----------------------+-----------------------------------------------------------+
+ |   | Energy Range (keV)    | 2.3 to 28                                                 |
+ +---+-----------------------+-----------------------------------------------------------+
+ |   | Energy Resolution     | 1.3x10\ :sup:`-4`, typical                                |
+ +---+-----------------------+-----------------------------------------------------------+
+ |   | Typical Flux (Hz)     | 5x10\ :sup:`10` (2.5 keV), 5x10\ :sup:`12` (10 keV)       |
+ +---+-----------------------+-----------------------------------------------------------+
+ | Si (311) monochromator crystal set                                                    |
+ +---+-----------------------+-----------------------------------------------------------+
+ |   | Energy Range (keV)    | 4.8 to 28                                                 |
+ +---+-----------------------+-----------------------------------------------------------+
+ |   | Energy Resolution     | 4x10\ :sup:`-5`, typical                                  |
+ +---+-----------------------+-----------------------------------------------------------+
+ |   | Typical Flux (Hz)     | 1x10\ :sup:`11` (7 keV), 2x10\ :sup:`12` (10 keV)         |
+ +---+-----------------------+-----------------------------------------------------------+
 
 
 Supported Techniques
@@ -67,12 +69,12 @@ Supported Techniques
 Detectors
 ~~~~~~~~~~~~~~~~~~~~
 
- * XRF: Mirion/Canberra SXD-7, 7-element silicon drift diode array
+ * XRF: Mirion/Canberra SXD-7, a 7-element silicon drift diode array
    with cyro-pulse cooling.  Xspress3 electronics are used for
    pulse-processing.  Backup detector: Hitachi ME-4 4-element silicon
    drift diode array, using Xspress3 pulse-processing electronics.
 
- * XRD: Eiger 1M detector, with 75x75 micron pixels.
+ * XRD: Eiger 1M detector, with 75x75 |micron| pixels.
 
  * HERFD: A custom 3-analyzer system is used for a 1-m Rowland circle
    geometry, with an Eiger 500K detector.  A variety of Si and Ge
@@ -91,10 +93,107 @@ Additional Equipment
 Data Collection Software
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Data collection
+Data collection is done with the EpicsScan application which uses
+Epics, Python, and Postgresql.  This provides a Graphical User
+Interface for configuring up and running X-ray Fluorescence maps,
+X-ray absorption scans, and simple line scans.  All XRF maps and XAS
+scans are done in "continuous" or "fly-scan" mode, where detectors are
+triggered by hardware pulses from the motor controllers.
+
+
+
+The EpicsScan application supports a set of commands or "macros" that
+can be run to allow users to change X-ray energy, move to a new sample
+position, and change beamline conditions.  These commands can be mixed
+with scanning commands and entered into a queue to be run unattended.
+
+A Graphical application is provided for the on-line Sample Microscope,
+allowing users to move around their samples and save positions by name
+that can be recalled in the application or used by the EpicsScan
+software.
+
+The microscope uses a high-resolution (5 MB) camera with a high
+dynamic range.  The field of view is typically ~1 x 1 mm, but this can
+be adjusted (manually).  The lighting is typcially in reflection, with
+a lamp whose intensity can be adjusted, as well as the frame
+integration time and gain. Lighting in transmission can be done for
+samples that allow it. A user-controllable pan-tilt-zoom camera in the
+hutch allows a large field of view.  The microscope image is saved
+with each named position.
+
+The sample sits with its surface at 45 degrees to the beam, and the
+microscope is (approximately) normal to sample surface. Beamline staff
+will set up the microscope and focus the X-ray beam so that the
+focused beam is near the center of the field of view when the sample
+surface is in focus. For most samples and configurations, this will be
+very close, but should not be trusted to be better than 10 or even 50
+|micron|. Instead, and XRF map should be made and used to select points
+for further analyses.
+
+A Graphical application, Epics XRF Control, for viewing and
+investigating live XRF spectra as they are collected from the XRF
+detector is provided.  This can be used to define Regions of Interests
+(ROI) in the spectra, to measure count rates and check for detector
+saturation, to investigate peak detection limits, and to look for
+fluorescence from unexpected elements.
+
+A Graphical application, Epics Instruments, can be used to save and
+restore positions for pre-defined beamline components.  This can be
+used, for example, to change slit sizes, detector distances, or the
+setup of X-ray mirrors.  These settings will usually be accessible as
+macro commands in the EpicsScan software.
+
+The software for these applications can be found at
+  * `epicsscan`_
+  * `epicsapps`_
+  * `xraylarch`_
+
+Some introductory videos and tutorials can be found at:
+  * https://www.youtube.com/playlist?list=PLgNIl_xwV_vKf83c2O7mwVtHERRK6belh
+
+In addition, "Epics Display Screens" from an Epics Display Manager,
+such as MEDM or Phoebus can be used for some very low-level
+interactions with the control system. This is generally discouraged
+for users, and users are encouraged to contact the beamline scientists
+before using these screens.
+
+
 
 Data Visualization and Analysis Software
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+For X-ray Fluorescence (XRF) Maps, visualization and analysis are done
+with the `GSECARS XRFMap Viewer` application, which is part of the
+Larch software distribution.  This provides tools for
+
+  * visualizing Region-of-Interest maps, typically with either indidividually or as 3-color maps
+  * extracting XRF spectra from regions of a map.
+  * fitting XRF spectrum, including to quantities proportional to
+    elemental abundances, and then applying these to make maps of abundances.
+
+For X-ray absorption (XAS) spectra, the `Larix` application, which is
+part of the Larch software package, is recommended.  This provides
+tools for visualization of XANES and EXAFS spectra, including
+
+  * XAS pre-edge subtraction and normalization.
+  * energy alignment, glitch removal, merging specta, correcting
+    over-absorption.
+  * XANES Principal Component Analysis, Linear Combination Fitting,
+    and some regression analysis to external variable.
+  * XANES pre-edge peak fitting.
+  * EXAFS background subtraction and Fourier transform.
+  * Running Feff (including a browsable database of mineral structures
+    to use) for path EXAFS modeling.
+  * EXAFS fitting usig Feff Paths.
+
+These can be downloaded at `xraylarch`_, which includes some
+documentation. A series of videas for XAS analysis can be found at
+https://www.youtube.com/playlist?list=PLgNIl_xwV_vK4V6CmrsEsahNCAsjt8_Be
+
+
+The older `Athena` and `Artemis` applications can also be used,
+especially for people who are using Windows and are already familiar
+with it.
 
 
 X-ray Source and Optics
@@ -135,7 +234,7 @@ A moveable view-screen with a phosphor and CCD camera can be placed in
 the monochromatic beam, just downstream of mirrors, and is used to
 assist setting up the monochromator and mirrors.  A second beam
 positio monitor is at 42 m from the source.  This is made from a set
-of thin metal foils (typically 1 micron thick) that are placed in the
+of thin metal foils (typically 1 |micron| thick) that are placed in the
 beam.  4 photodiodes are used to record the fluoreecence from the
 metal foils, and can be used to stabize the beam position in both
 horizontal and vertical directions.
@@ -149,7 +248,7 @@ vertically, followed by one focusing horizontally).  These mirrors are
 pitched at angles varying from 2 to 6 mrrad, with 3 mrad commonly.
 These mirrors have a rhodium metal coating, as well as bare silicon, A
 set of slits is used to define the beam hiting the mirrors, typically
-set between 200x200 and 400x400 microns, depending on the pitch of the
+set between 200x200 and 400x400 |micron|, depending on the pitch of the
 mirrors, and the desired flux. After the slites, a set of attenuators
 and a small lead sheet can be placed in the beam to block or reduce
 the beam intensity.  An ion chamber is placed between the attenuators
@@ -183,7 +282,7 @@ These can also be mounted on an offline microscope at the beamline.
 This allows users to find and save locations for analysis prior to
 analysis (or while other measurements are being made).  The saved
 locations can then be automatically transferred to the beamline sample
-stage, with typical accuracies of 100 microns or less.
+stage, with typical accuracies of 100 |micron| or less.
 
 Grains mounted on fibers for XRD or XRF tomography are supported.  We
 recommend quartz fibers.
@@ -221,13 +320,13 @@ informations as appropriate, or ask the beamline staff for guidance.
 This work used the X-ray microprobe at beamline 13-ID-E at the
 Advanced Photon Source, Argonne National Laboratory. A double crystal
 Si(111) monochromator was used to select the desired X-ray energy from
-an APS undulator. This beam was focused to 1x1 microns using
-Kirkpatrick-Baez mirrors, with typical monochromatic fluxes of 10^12
+an APS undulator. This beam was focused to 1x1 |micron| using
+Kirkpatrick-Baez mirrors, with typical monochromatic fluxes of 10\ :sup:`12`
 Hz.
 
 X-ray Fluorescence (XRF) maps were collected by continuously scanning
 the sample back and forth in beam, triggering detectors to collect
-full XRF spectra every 5 ms and 500 nm. ROI maps were made by summing
+full XRF spectra every 5 ms and 0.5 |micron|. ROI maps were made by summing
 fixed energy bins in the XRF spectra for each pixel.
 
 X-ray Diffraction (XRD) maps were collected along with the XRF maps,
@@ -250,45 +349,3 @@ Related Support Laboratories
 
   * SEM
   * off-line microscope
-
-
-
-X-ray Source and Optics (long)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-13-ID-E uses a 2.4 m undulator with permanent magnets and a 33-mm
-period (70 pole pairs) for the X-ray source.  This undulator is the
-upstream device in the canted straight-section for sector 13 with
-another undulator as the source for 13-ID-C and 13-ID-D, and a canting
-magnet with a 1 mrad deflection between the two undulators. The
-undulator gap can be varied to change the peak X-ray energy produced,
-with the smallest gap of 10.5 mm, giving X-ray energies ranging from
-2.4 keV and up.
-
-A high-heatload liquid nitrogen-cooled double crystal monochromator is
-used to define the energy, using either Si(111) or Si(311) crystals,
-at ~26 m from the X-ray source.  This monochromator works in fixed
-offset mode, with the offset putting the monochromatic beam 25 mm
-above the white beam.  The main rotation axis uses an high-torque
-direct-drive motor with an air bearing and ferrofluid vacuum seal. An
-optical encoder with a resolution of ~100 nrad is used to measure the
-angle.
-
-Water-cooled slts upstream of the monochromator are used to limit the
-power on the monochromator, and typically set to 0.25 x 0.25 mm,
-though occasionally adjusted from 0.05 to 0.5 mm in the vertical
-direction, and between 0.1 and 1.0 mm in the horizontal direction.
-
-After the monochromator the remaining white beam intensity is stopped
-in a water-cooled copper block, with monochromatic beam passing over
-this block. The two canted beams are separated by 1 mrad, and need to
-be futher separated. Two horizontally deflecting mirror, each 500-mm
-long, are pitched to 3 mrad, so deflecting the monochromatic beam by 6
-mrad, each. This total of 12 mrad additional separation gives
-sufficient space between the two beams in the end-station.
-
-Because X-ray mirrors have high reflectivity for X-ray eneergeis only
-up to some "critical energy" that depends on the denisty of the
-reflecting material, the mirror has coatings of Pt and Rh as well as
-bare Si that can be selected to reject higher harmonics of the
-monochromator and undulator.
