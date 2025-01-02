@@ -1,0 +1,66 @@
+.. _Synchrotron Earth and Environmental Science: https://seescience.org
+.. _DOI: https://www.doi.org/
+
+.. _scipy: https://scipy.org/
+.. _numpy: https://numpy.scipy.org/
+.. _matplotlib: https://matplotlib.org/
+.. _Demeter: https://bruceravel.github.io/demeter/
+.. _Dioptas: https://github.io/Dioptas/Dioptas
+.. _Feff Project: https://feff.phys.washington.edu/
+
+.. _XDI:   https://github.com/XraySpectroscopy/XAS-Data-Interchange/
+.. _XDI metadata dictionary:   https://github.com/XraySpectroscopy/XAS-Data-Interchange/blob/master/specification/dictionary.md
+
+.. _spec:    https://www.certif.com/content/spec
+.. _bliss:   https://bliss.gitlab-pages.esrf.fr/bliss/master/
+.. _silx:    https://www.silx.org/
+
+.. _pyepics:    https://pyepics.github.io/pyepics/
+.. _epicsapps:  https://pyepics.github.io/epicsapps/
+.. _epicsscan:  https://pyepics.github.io/epicsscan/
+.. _xraydb:     https://xraypy.github.io/XrayDB/
+.. _xraylarch:  https://xraypy.github.io/xraylarch/
+.. _lmfit:      https://lmfit.github.io/lmfit-py/
+.. _asteval:    https://lmfit.github.io/asteval/
+.. _wxmplot:    https://newville.github.io/wxmplot/
+
+.. _tomoscan:   htps://github.com/tomography/tomoscan
+.. _IDL_tomography: https://github.com/CARS-UChicago/IDL_Tomography
+.. _tomoRecon:  https://github.com/CARS-UChicago/tomoRecon
+
+.. include:: <isogrk3.txt>
+
+
+.. |Aring|    unicode:: U+000C5
+.. |Ang|      unicode:: U+000C5
+
+.. |Ang-1|    replace:: |Ang|\ :sup:`-1`
+.. |Ang-2|    replace:: |Ang|\ :sup:`-2`
+.. |micron|   replace:: |mu|\ m
+.. |muE|      replace:: |mu|\ (E)
+.. |chik|     replace:: |chi|\ (k)
+.. |chir|     replace:: |chi|\ (R)
+.. |I2theta|  replace:: I(2\ |theta|\ )
+
+.. |Kalpha|   replace:: :math:`\mathsf K_{\alpha}`
+.. |Kbeta|    replace:: :math:`\mathsf K_{\beta}`
+.. |Kalpha1|  replace:: :math:`\mathsf K_{\alpha1}`
+.. |Kalpha2|  replace:: :math:`\mathsf K_{\alpha2}`
+.. |Kbeta1|   replace:: :math:`\mathsf K_{\beta1}`
+.. |Kbeta2|   replace:: :math:`\mathsf K_{\beta2}`
+.. |Kbeta3|   replace:: :math:`\mathsf K_{\beta3}`
+.. |Lalpha|   replace:: :math:`\mathsf L_{\alpha}`
+.. |Lbeta|    replace:: :math:`\mathsf L_{\beta}`
+.. |Lgamma|   replace:: :math:`\mathsf L_{\gamma}`
+.. |L3|       replace:: L\ :sub:`|||`
+.. |L2|       replace:: L\ :sub:`||`
+.. |L1|       replace:: L\ :sub:`|`
+.. |M5|       replace:: M\ :sub:`V`
+.. |M4|       replace:: M\ :sub:`|V`
+.. |M3|       replace:: M\ :sub:`|||`
+.. |M2|       replace:: M\ :sub:`||`
+.. |M1|       replace:: M\ :sub:`|`
+
+.. only:: html
+
+   :math:`\newcommand{\AA}{\unicode{x212B}}`

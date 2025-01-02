@@ -1,10 +1,9 @@
 .. sees_facilities  documentation master file
 
+.. include:: substitutions.txt
+
 SEES Facilities
 ===============================================================
-
-.. _Synchrotron Earth and Environmental Science: https://seescience.org
-.. _DOI: https://www.doi.org/
 
 `Synchrotron Earth and Environmental Science`_ (SEES) supports a
 number of facilities and resources, including beamlines, end-stations,
