@@ -60,7 +60,3 @@
 .. |M3|       replace:: M\ :sub:`|||`
 .. |M2|       replace:: M\ :sub:`||`
 .. |M1|       replace:: M\ :sub:`|`
-
-.. only:: html
-
-   :math:`\newcommand{\AA}{\unicode{x212B}}`

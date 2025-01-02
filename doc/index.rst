@@ -39,9 +39,6 @@ There are several types of facilities included here, including
 3. Data collection, visualization, and analysis software.
 
 
-Status
----------------
-
 This documentation is in the early stages of development.
 
 Table of Contents
@@ -49,12 +46,11 @@ Table of Contents
 
 .. toctree::
    :maxdepth: 2
-   :caption: Facilities:
 
-   build
    APS/index.rst
    NSLS-II
    ALS
    SSRL
    Software
    ReferenceData
+   build
