@@ -1,0 +1,50 @@
+{
+    "GLOBAL_OPTIONS": {
+        "verbose": false,
+        "site_url": "http://127.0.0.1:8000",
+        "debug": false,
+        "debug_target": null,
+        "author": "SEES Beamline Staff",
+        "author_logo": null,
+        "copyright": "2025",
+        "disclaimer": "https://seescience.org",
+        "cover": true,
+        "cover_title": "SEES Facilities Documentation",
+        "cover_subtitle": "",
+        "custom_template_path": "",
+        "theme_handler_path": null,
+        "plugin_handler_path": null,
+        "custom_css_path": "",
+        "toc": true,
+        "toc_numbering": true,
+        "toc_title": "Contents",
+        "toc_level": 3,
+        "cover_images": {
+            "default": "_static/sees_logo.png"
+        },
+        "theme_name": "bizstyle",
+        "templates_path": [
+            "_templates"
+        ]
+    },
+    "LOCAL_OPTIONS": {
+        "APS/13BMC_DAC": {},
+        "APS/13BMC_GPD": {},
+        "APS/13BMD_CMT": {},
+        "APS/13BMD_DAC": {},
+        "APS/13BMD_LVP": {},
+        "APS/13IDC_GPD": {},
+        "APS/13IDD_DAC": {},
+        "APS/13IDD_LVP": {},
+        "APS/13IDE_XRM": {},
+        "APS/index": {},
+        "build": {},
+        "index": {},
+        "genindex": {
+            "pdf-build": "False"
+        },
+        "search": {
+            "pdf-build": "False"
+        }
+    }
+}
