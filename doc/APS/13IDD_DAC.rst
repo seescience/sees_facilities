@@ -1,4 +1,6 @@
-.. aps_13idd_dac
+.. include:: ../substitutions.txt
+
+.. _aps_13idd_dac:
 
 APS 13-ID-D Diamond-Anvil Cell High-Pressure Program
 ===============================================================
@@ -7,26 +9,98 @@ APS 13-ID-D Diamond-Anvil Cell High-Pressure Program
 Beamline Overview
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-The 13-ID-D Diamond-Anvil-Cell (DAC) program...
+The 13-ID-D Diamond-Anvil-Cell (DAC) program supports X-ray
+Diffraction measurements on samples at high temperature and pressure
+in laser-heated Diamond Anvil Cells.
 
 
 Contacts
 ~~~~~~~~~~~~~~~~~~~~
 
-
  +-----------------------+-----------------------------------+
  | Name                  | email                             |
- +-----------------------+-----------------------------------+
+ +=======================+===================================+
  | Vitali Prakapenka     | prakapenka@cars.uchicago.edu      |
  +-----------------------+-----------------------------------+
  | Stella Chariton       | chariton@cars.uchicago.edu        |
  +-----------------------+-----------------------------------+
 
+
+
+Beamline specifications
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+ +---------------------------+-----------------------------------------------------------+
+ | Quantity                  | Value                                                     |
+ +===========================+===========================================================+
+ | X-ray Source              | APS undulator, 27 mm period                               |
+ +---------------------------+-----------------------------------------------------------+
+ | Typical Beam Size  (DAC)  | 1 x 1 |micron| to 25 x 25 |micron|                        |
+ +---------------------------+-----------------------------------------------------------+
+ | Monochromator             | Double-Crystal Mono, LN2-cooled, 2 crystal sets           |
+ +----+----------------------+-----------------------------------------------------------+
+ | Si (111) monochromator crystal set                                                    |
+ +---+-----------------------+-----------------------------------------------------------+
+ |   | Energy Range (keV)    | 5.0 to 80                                                 |
+ +---+-----------------------+-----------------------------------------------------------+
+ |   | Energy Resolution     | 1.3x10\ :sup:`-4`, typical                                |
+ +---+-----------------------+-----------------------------------------------------------+
+ |   | Typical Flux (Hz)     | 5x10\ :sup:`12` (40 keV)                                  |
+ +---+-----------------------+-----------------------------------------------------------+
+ | Si (311) monochromator crystal set                                                    |
+ +---+-----------------------+-----------------------------------------------------------+
+ |   | Energy Range (keV)    | 8 to 80                                                   |
+ +---+-----------------------+-----------------------------------------------------------+
+ |   | Energy Resolution     | 4x10\ :sup:`-5`, typical                                  |
+ +---+-----------------------+-----------------------------------------------------------+
+ |   | Typical Flux (Hz)     | 1x10\ :sup:`12` (40 keV)                                  |
+ +---+-----------------------+-----------------------------------------------------------+
+ | White Beam                                                                            |
+ +---+-----------------------+-----------------------------------------------------------+
+ |   | Energy Range (keV)    | 5 to 120                                                  |
+ +---+-----------------------+-----------------------------------------------------------+
+ |   | Energy Resolution     | N/A                                                       |
+ +---+-----------------------+-----------------------------------------------------------+
+ |   | Typical Flux (Hz)     | 1x10\ :sup:`14`                                           |
+ +---+-----------------------+-----------------------------------------------------------+
+
+
+
 Supported Techniques
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
  * X-ray Diffraction
- * Micro X-ray diffraction
+ * Laser-Heated Diamon Anvil Cell High-Pressure Diffraction
+ * X-ray emission spectroscopy
+
+
+Detectors
+~~~~~~~~~~~~~~~~~~~~
+
+ * Eiger 9M detector, with 75 |micron| pixels.
+ * Pilatus3X 1M CdTe, with 172 |micron| pixels.
+
+Additional Equipment
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+ * Diamond-anvil cell with double-sided laser heating (13-ID-D)
+ * Two 100-watt fiber lasers, 200-watt CO2 lasers
+ * Laser Raman system online and in support laboratory
+ * VIS and NIR spectroscopy online and in support lab
+ * Sample preparation lab
+
+
+Data Collection Software
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Epics, Python
+
+Data Visualization Software
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Dioptas
+
 
 
 X-ray Source and Optics
@@ -45,25 +119,12 @@ offset mode, with the offset putting the monochromatic beam 15 mm
 above the white beam. ...
 
 
-Detectors
-~~~~~~~~~~~~~~~~~~~~
-
- * XRD: Eiger 9M detector, with 75x75 micron pixels.
 
 
 Sample Mounting and Environments
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Data Collection Software
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Epics, Python
-
-Data Visualization Software
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Dioptas
 
 Typical Paragraph for a publication
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -73,6 +134,7 @@ Typical Paragraph for a publication
 Related Support Laboratories
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  * raman
-  * gas-loading
-  * sample prep
+
+  * Laser Raman system online and in support laboratory
+  * VIS and NIR spectroscopy online and in support lab
+  * Gas-Loading of DACs
