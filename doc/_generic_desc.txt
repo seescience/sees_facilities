@@ -1,0 +1,99 @@
+.. include:: ../substitutions.txt
+
+.. _SOURCE_BL_tech:
+
+APS 13-BM-D
+==============================================================
+
+Beamline Overview
+~~~~~~~~~~~~~~~~~~~~~~~
+
+The 13-BM-D station ....
+
+Contacts
+~~~~~~~~~~~~~~
+
+ +-----------------------+-----------------------------------+
+ | Name                  | email                             |
+ +=======================+===================================+
+ | Person One            | p1@cars.uchicago.edu              |
+ +-----------------------+-----------------------------------+
+
+
+Beamline specifications
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+ +---------------------------+-----------------------------------------------------------+
+ | Quantity                  | Value                                                     |
+ +===========================+===========================================================+
+ | X-ray Source              | APS bending magnet                                        |
+ +---------------------------+-----------------------------------------------------------+
+ | Monochromator             | Double-Crystal Mono, water-cooled, Si(111)                |
+ +----+----------------------+-----------------------------------------------------------+
+ |   | Energy Range (keV)    | 4.5 to 100                                                |
+ +---+-----------------------+-----------------------------------------------------------+
+ |   | Energy Resolution     | 1.3x10\ :sup:`-4`, typical                                |
+ +---+-----------------------+-----------------------------------------------------------+
+ |   | Typical Flux (Hz)     | 1x10\ :sup:`9` (10 keV)                                   |
+ +---+-----------------------+-----------------------------------------------------------+
+ |   | Typical Beam Size     | 15 x 5 (H x V) |micron| to 50 x 4 (H x V) mm              |
+ +---+-----------------------+-----------------------------------------------------------+
+
+
+
+Supported Techniques
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+ * High-pressure diamond anvil cell
+ * ...
+
+Detectors
+~~~~~~~~~~~~~~~~~~~~
+
+  * Pilatus 3S 1M CdTe, 172 |micron| pixels.
+  * FLIR USB and 10G cameras
+  * ...
+
+
+Additional Equipment
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+ * Sample preparation lab
+
+
+Data Collection Software
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Data collection is done with the Epics, Python, ....
+
+
+Data Visualization and Analysis Software
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Data visualization is done with the Epics, Python, ....
+
+X-ray Source and Optics
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+13-BM-D ...
+
+
+
+Sample Mounting and Environments
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Typical Paragraph for a publication
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The following includes typical descriptions of the beamline that can
+be added to a paper. This is probably more than you need, so feel free
+to edit or select portions of this for main text or supplemental
+informations as appropriate, or ask the beamline staff for guidance.
+
+This work used the beamline 13-BM-D at the Advanced Photon Source, Argonne National Laboratory.
+
+
+Related Support Laboratories
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
