@@ -28,4 +28,4 @@ https://seescience.github.io/sees_facilities/
 
 When rendered and installed, the DOIs for these documents will point
 to addressed under
-https://public.seescience.org/Facilities/html2025_01
+https://public.seescience.org/Facilities/html2025_01/
