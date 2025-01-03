@@ -24,8 +24,6 @@ from datetime import date
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 extensions = ['sphinx.ext.mathjax',
               'sphinx_copybutton',
-              'sphinx_pdf_generate',
-              'rst2pdf.pdfbuilder'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -199,18 +197,3 @@ latex_documents = [
 
 # If false, no module index is generated.
 #latex_use_modindex = True
-
-
-pdfgen_author = "SEES Beamline Staff"
-pdfgen_copyright = "2025"
-pdfgen_disclaimer = "https://seescience.org"
-pdfgen_cover = True
-pdfgen_cover_title = "SEES Facilities Documentation"
-pdfgen_cover_subtitle = ""
-pdfgen_custom_template_path = ""
-pdfgen_custom_css_path = ""
-pdfgen_toc = True
-pdfgen_toc_numbering = True
-pdfgen_toc_title = "Contents"
-pdfgen_toc_level = 3
-pdfgen_cover_images = { "default": "_static/sees_logo.png" }

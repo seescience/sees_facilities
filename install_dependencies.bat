@@ -1,3 +1,3 @@
 @ECHO OFF
 
-python -m pip install sphinx sphinx-copybutton sphinx-pdf-generate
+python -m pip install sphinx sphinx-copybutton 
