@@ -5,6 +5,8 @@
 APS 13-ID-E X-ray Microprobe
 ===============================================================
 
+https://doi.org/10.71622/SEES-FACAPS13IDE_XRM
+
 Beamline Overview
 ~~~~~~~~~~~~~~~~~~~~~~~
 
