@@ -11,7 +11,7 @@ Beamline Overview
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 The 13-ID-E hard x-ray microprobe provides researchers resources for
-microfocused x-ray fluorescence, absorption spectroscopy, and
+micro-focussed x-ray fluorescence, absorption spectroscopy, and
 diffraction analysis at spatial resolutions from 0.5 to 200 |micron|.
 
 
@@ -64,7 +64,7 @@ Supported Techniques
  * Micro X-ray fluorescence analysis and mapping
  * Micro X-ray fluorescence tomography
  * Micro X-ray absorption spectroscopy (XAS, XANES, EXAFS)
- * Micro High-energy resolution flourescence detected (HERFD) X-ray absorption fine structure
+ * Micro High-energy resolution fluorescence detected (HERFD) X-ray absorption fine structure
  * Micro X-ray diffraction
 
 
@@ -116,7 +116,7 @@ software.
 
 The microscope uses a high-resolution (5 MB) camera with a high
 dynamic range.  The field of view is typically ~1 x 1 mm, but this can
-be adjusted (manually).  The lighting is typcially in reflection, with
+be adjusted (manually).  The lighting is typically in reflection, with
 a lamp whose intensity can be adjusted, as well as the frame
 integration time and gain. Lighting in transmission can be done for
 samples that allow it. A user-controllable pan-tilt-zoom camera in the
@@ -168,7 +168,7 @@ For X-ray Fluorescence (XRF) Maps, visualization and analysis are done
 with the `GSECARS XRFMap Viewer` application, which is part of the
 Larch software distribution.  This provides tools for
 
-  * visualizing Region-of-Interest maps, typically with either indidividually or as 3-color maps
+  * visualizing Region-of-Interest maps, typically with either individually or as 3-color maps
   * extracting XRF spectra from regions of a map.
   * fitting XRF spectrum, including to quantities proportional to
     elemental abundances, and then applying these to make maps of abundances.
@@ -178,7 +178,7 @@ part of the Larch software package, is recommended.  This provides
 tools for visualization of XANES and EXAFS spectra, including
 
   * XAS pre-edge subtraction and normalization.
-  * energy alignment, glitch removal, merging specta, correcting
+  * energy alignment, glitch removal, merging spectra, correcting
     over-absorption.
   * XANES Principal Component Analysis, Linear Combination Fitting,
     and some regression analysis to external variable.
@@ -186,7 +186,7 @@ tools for visualization of XANES and EXAFS spectra, including
   * EXAFS background subtraction and Fourier transform.
   * Running Feff (including a browsable database of mineral structures
     to use) for path EXAFS modeling.
-  * EXAFS fitting usig Feff Paths.
+  * EXAFS fitting using Feff Paths.
 
 These can be downloaded at `xraylarch`_, which includes some
 documentation. A series of videas for XAS analysis can be found at
@@ -210,7 +210,7 @@ A liquid nitrogen-cooled double crystal monochromator is used to
 define the energy, using either Si(111) or Si(311) crystals, at ~26 m
 from the X-ray source.  This monochromator works in fixed offset mode,
 with the monochromatic beam 25 mm above the white beam.  Water-cooled
-slts upstream of the monochromator limit the power on the
+slits upstream of the monochromator limit the power on the
 monochromator, and typically set to 0.25 x 0.25 mm, though
 occasionally adjusted from 0.05 to 0.5 mm in the vertical direction,
 and between 0.1 and 1.0 mm in the horizontal direction. After the
@@ -218,7 +218,7 @@ monochromator the remaining white beam intensity is stopped in a
 water-cooled copper block, with monochromatic beam passing over this
 block.
 
-The monochrmatic beam is then deflected horizontally by 2
+The monochromatic beam is then deflected horizontally by 2
 horizontal mirrors, each 500-mm long, are pitched to 3 mrad, so
 deflecting the monochromatic beam by 6 mrad, each. The 12 mrad
 deflection separates this branch from the other branch (for 13-ID-C
@@ -226,8 +226,8 @@ and 13-ID-D), to give sufficient working space in the 13-ID-E
 end-station.  The mirrors are polished to be very flat so that they
 preserve the horizontal divergence of the source.
 
-Since X-ray mirrors have high reflectivity for X-ray eneergeis only
-up to some "critical energy" that depends on the denisty of the
+Since X-ray mirrors have high reflectivity for X-ray energies only
+up to some "critical energy" that depends on the density of the
 reflecting material, these mirrors have separate coatings of platinum
 and rhodium as well as bare silicon.  This ultimately limits the
 beamline to an upper energy limit of about 28 keV.
@@ -235,10 +235,10 @@ beamline to an upper energy limit of about 28 keV.
 A moveable view-screen with a phosphor and CCD camera can be placed in
 the monochromatic beam, just downstream of mirrors, and is used to
 assist setting up the monochromator and mirrors.  A second beam
-positio monitor is at 42 m from the source.  This is made from a set
+position monitor is at 42 m from the source.  This is made from a set
 of thin metal foils (typically 1 |micron| thick) that are placed in the
-beam.  4 photodiodes are used to record the fluoreecence from the
-metal foils, and can be used to stabize the beam position in both
+beam.  4 photodiodes are used to record the fluorescence from the
+metal foils, and can be used to stabilize the beam position in both
 horizontal and vertical directions.
 
 The X-ray beam is in vacuum until it enters the 13-ID-E endstation,
@@ -249,7 +249,7 @@ position with a set of Kirkpatrick-Baez mirrors (one focusing
 vertically, followed by one focusing horizontally).  These mirrors are
 pitched at angles varying from 2 to 6 mrrad, with 3 mrad commonly.
 These mirrors have a rhodium metal coating, as well as bare silicon, A
-set of slits is used to define the beam hiting the mirrors, typically
+set of slits is used to define the beam hitting the mirrors, typically
 set between 200x200 and 400x400 |micron|, depending on the pitch of the
 mirrors, and the desired flux. After the slites, a set of attenuators
 and a small lead sheet can be placed in the beam to block or reduce
@@ -302,7 +302,7 @@ time, and changing samples can take tens of minutes to an hour.
 For analysis of radioactive samples, or any samples where uranium (at
 any concentration or isotope) is a main element of interest,
 containment of potential radiation from the sample will need to be
-considerd.  This often means using a few separate layers of Kapton
+considered.  This often means using a few separate layers of Kapton
 between the sample and the outside world.  To be clear, while APS
 Health Physics group does recognize that there are non-hazardous
 levels of uranium, and some samples need no containment, they are
@@ -334,7 +334,7 @@ fixed energy bins in the XRF spectra for each pixel.
 X-ray Diffraction (XRD) maps were collected along with the XRF maps,
 triggering to colect and XRD image with each pixel in XRF map.
 
-X-ray Absorption spectra (XAS/XANES/EXAFS) were collected by scannning
+X-ray Absorption spectra (XAS/XANES/EXAFS) were collected by scanning
 the energy of the monochromator and undulator together across the Fe K
 edge (near 7110 eV).  The energy was scanned continuously but binned
 to simulate a classic XAS stepscan, with steps of 2 eV below the edge
@@ -342,7 +342,7 @@ to simulate a classic XAS stepscan, with steps of 2 eV below the edge
 steps in wavenumber k of 0.05 Ang^1 above the edge (7120 to 7670 eV),
 with 1 sec between bins, so that each XAS scan took 7 to 8 minutes.
 
-High-Energy Resolution Flourescence Deteected (HERFD) XAS was
+High-Energy Resolution Fluorescence Detected (HERFD) XAS was
 collected with a 3-analyzer system.
 
 
