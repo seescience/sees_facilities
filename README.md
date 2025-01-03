@@ -17,11 +17,15 @@ or, on Windows:
    C:/> install_dependencies.bat
 
 With the packages installed, you should be able to build the
-documention by typing:
+documention by moving into the doc folder and typing:
 
    make
 
-The results will be in the `_build/html` folder.
+The results will be in the `doc/_build/html` folder.
+
+The current version of this document is at
+https://seescience.github.io/sees_facilities/
 
 When rendered and installed, the DOIs for these documents will point
-to addressed under https://public.seescience.org/
+to addressed under
+https://public.seescience.org/Facilities/html2025_01
