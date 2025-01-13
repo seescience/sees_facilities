@@ -11,19 +11,22 @@ INSTALLDIR    = .
 
 ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(SPHINXOPTS) .
 
-.PHONY: help html pdf all help clean dirhtml latex sphinxhelp
+.PHONY: help html pdf all help clean dirhtml latex sphinxhelp tarball
 
 html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 
+tarball: html
+	cd $(BUILDDIR)/html && tar cvzf ../../_doc.tgz *  & cd ../../
 
 all: html pdf
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) _build/html
 	cd $(BUILDDIR)/latex && make all-pdf
 	@echo
 	@echo "Build finished. The HTML pages are in _build/html."
+
 
 pdf: latex
 	cd $(BUILDDIR)/latex && make all-pdf
