@@ -16,3 +16,4 @@ SEES APS Facilities
    13IDD_DAC.rst
    13IDD_LVP.rst
    13IDE_XRM.rst
+   13SEM.rst
