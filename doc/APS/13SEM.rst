@@ -2,14 +2,14 @@
 
 .. _aps_13_sem:
 
-APS Sector 13 Benchtop SEM
+APS Sector 13 Bench-top SEM
 ===============================================================
 
 
 Facility Overview
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-GSECARS Benchtop SEM is a JEOL JCM-6000Plus with EDS.
+GSECARS Bench-top SEM is a JEOL JCM-6000Plus with EDS.
 
 
 
@@ -23,7 +23,7 @@ GSECARS Benchtop SEM is a JEOL JCM-6000Plus with EDS.
 
 To use this, please:
 
- 1. Submit an ESAF for use of the SEM or, if you have beamtime
+ 1. Submit an ESAF for use of the SEM or, if you have beam time
     scheduled at GSECARS, make sure you note use of the SEM in your
     experiment ESAF. All materials intended to be examined must be
     listed and pre-approved.
@@ -72,7 +72,7 @@ Supported Techniques
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
  * Back-scatter electron imaging
- * Energy-Dispersive Spectroscopy (EDS) detector for X-ray fluoresence
+ * Energy-Dispersive Spectroscopy (EDS) detector for X-ray fluorescence
    analysis and imaging.
 
 
