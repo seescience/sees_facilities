@@ -349,5 +349,5 @@ collected with a 3-analyzer system.
 Related Support Laboratories
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  * :ref:`_aps_13_sem`.
+  * :ref:`aps_13_sem`.
   * off-line microscope
